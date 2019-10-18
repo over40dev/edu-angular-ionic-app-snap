@@ -5,8 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import { SlideshowPage } from '../slideshow/slideshow.page';
-import { DaysAgoPipe } from '../pipes/days-ago.pipe';
 
 @NgModule({
   imports: [
@@ -20,7 +18,6 @@ import { DaysAgoPipe } from '../pipes/days-ago.pipe';
       }
     ])
   ],
-  declarations: [HomePage, SlideshowPage, DaysAgoPipe],
-  entryComponents: [SlideshowPage]
+  declarations: [HomePage]
 })
 export class HomePageModule {}

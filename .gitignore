@@ -2,8 +2,6 @@
 # http://git-scm.com/docs/gitignore
 
 *~
-android/
-ios/
 *.sw[mnpcod]
 .tmp
 *.tmp
