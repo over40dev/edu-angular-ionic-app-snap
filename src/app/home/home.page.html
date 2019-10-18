@@ -1,42 +1,14 @@
 <ion-header>
-  <ion-toolbar color="danger">
+  <ion-toolbar>
     <ion-title>
-      <img src="assets/images/logo.png" alt="logo" />
+      Ionic Blank
     </ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="playSlideshow()">
-        <ion-icon slot="icon-only" name="play"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list lines="none">
-    <ion-item *ngIf="!photoService.photoTaken" button (click)="takePhoto()">
-      <img src="assets/images/smile.png" alt="smile photo button">
-    </ion-item>
-
-    <!-- <ion-item-sliding *ngFor="let pic of photoService.pics"> -->
-    <ion-item-sliding>
-      <ion-item>
-        <ion-item>
-          <img src="https://placehold.it/100x100">
-          <ion-badge slot="end" color="light">
-            2 days ago
-            <!-- {{pic.dateTaken | daysAgo}} days ago -->
-          </ion-badge>
-        </ion-item>
-      </ion-item>
-
-      <ion-item-options>
-        <ion-item-option 
-          button 
-          color="danger" 
-          (click)="deletePhoto(pic)">
-          <ion-icon slot="icon-only" name="trash"></ion-icon>
-        </ion-item-option>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
+  <div class="ion-padding">
+    The world is your oyster.
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  </div>
 </ion-content>

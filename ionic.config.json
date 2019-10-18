@@ -1,7 +1,5 @@
 {
   "name": "snapaday",
-  "integrations": {
-    "capacitor": {}
-  },
+  "integrations": {},
   "type": "angular"
 }
