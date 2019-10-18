@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PhotoService } from '../services/photo.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,21 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  public photoTaken: boolean;
 
+  constructor(
+    public photoService: PhotoService,
+  ) {}
+
+  playSlideshow() {
+    console.log('play slideshow');
+  }
+
+  takePhoto() {
+    console.log('take photo');
+  }
+
+  deletePhoto(pic) {
+    console.log('del', pic);
+  }
 }
