@@ -1,7 +1,0 @@
-{
-  "appId": "dev.over40.snapaday",
-  "appName": "snapaday",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www"
-}

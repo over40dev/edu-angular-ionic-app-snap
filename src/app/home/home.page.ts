@@ -7,7 +7,6 @@ import {
   IonList,
 } from '@ionic/angular';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
-import { SlideshowPage } from '../slideshow/slideshow.page';
 import {
   PhotoService,
   AlertService,
