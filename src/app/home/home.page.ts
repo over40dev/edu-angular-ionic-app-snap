@@ -1,18 +1,32 @@
-import { Component } from '@angular/core';
-import { PhotoService } from '../services/photo.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import {
+  ModalController,
+  AlertController,
+  LoadingController,
+  IonList,
+} from '@ionic/angular';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+import { SlideshowPage } from '../slideshow/slideshow.page';
+import {
+  PhotoService,
+  AlertService,
+} from '../services';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
-
+export class HomePage implements OnInit {
   public photoTaken: boolean;
 
   constructor(
     public photoService: PhotoService,
+    private alertService: AlertService
   ) {}
+
+  ngOnInit() {}
 
   playSlideshow() {
     console.log('play slideshow');

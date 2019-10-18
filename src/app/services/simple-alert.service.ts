@@ -1,9 +1,21 @@
 import { Injectable } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class SimpleAlertService {
+export default class SimpleAlertService {
+  constructor(private alertCtrl: AlertController) {}
 
-  constructor() { }
+  createAlert(header: string, message: string): Promise<any> {
+    return this.alertCtrl.create({
+      header,
+      message,
+      buttons: [
+        {
+          text: 'Ok',
+        },
+      ],
+    });
+  }
 }

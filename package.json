@@ -1,8 +1,8 @@
 {
   "name": "snapaday",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Josh Morony",
+  "homepage": "https://joshmorony.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,6 +20,7 @@
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "@capacitor/android": "^1.2.1",
     "@capacitor/core": "1.2.1",
     "@capacitor/ios": "^1.2.1",
     "@ionic-native/core": "^5.0.0",
@@ -51,6 +52,7 @@
     "@angular/language-service": "~8.1.2",
     "@capacitor/cli": "1.2.1",
     "@ionic/angular-toolkit": "~2.0.0",
+    "@ionic/lab": "2.0.11",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -67,5 +69,5 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project"
+  "description": "An Over40.dev project"
 }
