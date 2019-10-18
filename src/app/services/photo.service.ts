@@ -1,16 +1,9 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PhotoService implements OnInit {
-
-  public pics: Array<string>;
-  public picTaken: boolean;
+export class PhotoService {
 
   constructor() { }
-
-  ngOnInit() {
-    this.pics = ['https://placehold.it/100x100'];
-  }
 }

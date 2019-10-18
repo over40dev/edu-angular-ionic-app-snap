@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-slideshow',
@@ -8,19 +7,9 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 export class SlideshowPage implements OnInit {
 
-  public imageSrc: SafeResourceUrl;
-
   constructor() { }
 
   ngOnInit() {
-  }
-
-  playPhotos() {
-
-  }
-
-  close() {
-    
   }
 
 }
