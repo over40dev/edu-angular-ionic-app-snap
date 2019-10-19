@@ -7,10 +7,8 @@ import {
   IonList,
 } from '@ionic/angular';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
-import {
-  PhotoService,
-  AlertService,
-} from '../services';
+import { SlideshowPage } from '../slideshow/slideshow.page';
+import { PhotoService, AlertService } from '../services';
 
 @Component({
   selector: 'app-home',
@@ -19,23 +17,31 @@ import {
 })
 export class HomePage implements OnInit {
   public photoTaken: boolean;
+  @ViewChild(IonList, {static: false}) slidingList: IonList;
 
   constructor(
     public photoService: PhotoService,
-    private alertService: AlertService
+    private alertCtrl: AlertController,
+    private alertService: AlertService,
+    private modalCtrl: ModalController,
+    private socialSharing: SocialSharing,
+    private loadingCtrl: LoadingController,
+    public sanitizer: DomSanitizer
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.photoService.load();
+  }
 
   playSlideshow() {
     console.log('play slideshow');
   }
 
   takePhoto() {
-    console.log('take photo');
+    console.log('take pic');
   }
 
-  deletePhoto(pic) {
-    console.log('del', pic);
+  deletePhoto(pic: string) {
+    console.log('delete pic', pic);
   }
 }
